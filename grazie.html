@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Grazie – Digital Communication Lab</title>
+<style>
+:root{
+  --fondo:#151817;
+  --fondo2:#1c211f;
+  --inchiostro:#f2f0ea;
+  --tenue:#9aa39c;
+  --accento:#6fcda8;
+  --linea:#2c322f;
+}
+*{box-sizing:border-box}
+html,body{margin:0;min-height:100%}
+body{
+  background:var(--fondo);
+  color:var(--inchiostro);
+  font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  display:flex;align-items:center;justify-content:center;
+  min-height:100vh;padding:40px 24px;
+}
+.foglio{width:min(760px,100%);text-align:center}
+.occhiello{
+  font-size:12px;font-weight:900;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--accento);margin-bottom:22px;
+}
+h1{
+  font-size:clamp(64px,13vw,140px);line-height:.9;letter-spacing:-.06em;
+  margin:0 0 26px;font-weight:900;
+}
+.saluto{
+  font-size:clamp(18px,2.4vw,25px);line-height:1.45;color:#d7dcd7;
+  max-width:560px;margin:0 auto 34px;
+}
+.chiusura{
+  border-top:1px solid var(--linea);padding-top:26px;margin-top:6px;
+  font-size:clamp(19px,2.8vw,30px);line-height:1.2;font-weight:900;letter-spacing:-.02em;
+}
+.chiusura span{color:var(--tenue);display:block;font-size:13px;font-weight:700;
+  letter-spacing:.1em;text-transform:uppercase;margin-bottom:12px}
+.firma{margin-top:34px;font-size:14px;color:var(--tenue);line-height:1.7}
+.firma b{color:var(--inchiostro);font-weight:800}
+@media (max-width:520px){
+  body{padding:32px 20px}
+  .saluto{margin-bottom:28px}
+}
+</style>
+</head>
+<body>
+<div class="foglio">
+  <div class="occhiello">Digital Communication Lab · Food Content Creation</div>
+  <h1>Grazie.</h1>
+  <p class="saluto">Il laboratorio è finito. In mezz&#8217;ora abbiamo costruito un post vero, insieme, partendo da tre domande invece che dalla grafica.</p>
+  <div class="chiusura">
+    <span>Quello che resta</span>
+    Il problema non è esserci.<br>È sembrare uguali a tutti gli altri.
+  </div>
+  <div class="firma"><b>Francesco Passeri</b><br>Open Day &middot; 10 settembre 2026</div>
+</div>
+</body>
+</html>
