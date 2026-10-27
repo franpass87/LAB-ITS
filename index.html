@@ -144,6 +144,19 @@
   .finalscore{margin-top:8px;padding:10px}
   .fakeimg{height:clamp(100px,16vh,150px)}
 }
+/* Desktop: la foto dei post resta quadrata come su Instagram, il testo le sta accanto invece di schiacciarla */
+@media (min-width:921px){
+  .abgrid .postcard,.comparegrid .comparecard{--imgw:clamp(210px,min(100vh - 430px,24vw),360px);display:grid;grid-template-columns:var(--imgw) minmax(0,1fr);grid-template-rows:auto auto auto 1fr;align-content:start}
+  .abgrid .postcard>*,.comparegrid .comparecard>*{grid-column:2}
+  .abgrid .fakeimg,.comparegrid .fakeimg{grid-column:1;grid-row:1/-1;width:var(--imgw);height:auto;min-height:0;aspect-ratio:1/1;align-self:start}
+  .abgrid .fakeimg h3{font-size:clamp(19px,2.6vh,24px)}
+}
+@media (min-width:921px) and (max-height:760px){
+  .preview{max-width:330px}
+}
+@media (min-width:921px) and (max-height:620px){
+  .preview{max-width:290px}
+}
 </style>
 </head>
 <body>
